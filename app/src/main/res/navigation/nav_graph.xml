@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/podcastListFragment">
+
+    <fragment
+        android:id="@+id/podcastListFragment"
+        android:name="com.rohan.audiobookdemo.view.PodcastListFragment"
+        android:label="Podcast List"
+        tools:layout="@layout/fragment_podcast_list">
+
+        <action
+            android:id="@+id/action_podcastListFragment_to_podcastDetailFragment"
+            app:destination="@id/podcastDetailFragment">
+            <argument
+                android:name="podcasts"
+                app:argType="com.rohan.audiobookdemo.model.PodcastModel" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/podcastDetailFragment"
+        android:name="com.rohan.audiobookdemo.view.PodcastDetailFragment"
+        android:label="Podcast Detail"
+        tools:layout="@layout/fragment_podcast_detail">
+
+        <argument
+            android:name="podcasts"
+            app:argType="com.rohan.audiobookdemo.model.PodcastModel" />
+
+    </fragment>
+
+</navigation>
+

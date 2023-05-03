@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="12dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/thumbnail_image_view"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:contentDescription="@string/podcastImageContextDesc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail_image_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+
+        android:layout_toEndOf="@+id/thumbnail_image_view"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing="0.02"
+
+        android:maxLines="2"
+        android:text="Title text a f fsd ads fsad fasd aa fasd as dfdsa fdsa fas df sadf sadf "
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/publisher_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text_view"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/thumbnail_image_view"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing="0.02"
+        android:text="publisher name"
+        android:textAllCaps="false"
+        android:textColor="#A1A1A1"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/favourite_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publisher_text_view"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/thumbnail_image_view"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing="0.02"
+        android:text="@string/favourited"
+        android:textAllCaps="false"
+        android:textColor="#D65656"
+        android:visibility="gone"
+        android:textSize="14sp" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/thumbnail_image_view"
+        android:layout_marginStart="-16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="-16dp"
+        android:layout_marginBottom="0dp"
+        android:background="#19808080"
+        android:paddingStart="0dp"
+        tools:ignore="RtlSymmetry" />
+
+</RelativeLayout>
