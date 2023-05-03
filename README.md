@@ -49,8 +49,3 @@ Upon launching the app, you will see a list of podcast episodes related to the "
 Upon clicking on any Podcast, on the next screen, you can see its description,  publisher details, full title, etc. Also, from here, you can mark that podcast favourite too!
 
 To mark an episode as a favourite, click the star icon in the episode details screen. The star icon will turn yellow to indicate that the episode is now a favourite.
-
-
-## License
-
-This app is licensed under the MIT License. See the LICENSE file for details.
